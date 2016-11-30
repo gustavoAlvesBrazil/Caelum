@@ -19,5 +19,23 @@ public class TestaFuncionario {
 		System.out.println("Novo salário: " + f.salario);
 
 		System.out.println("Novo ganho anual: " + f.calculaGanhoAnual());
+
+		f.demite();
+
+		if(f.isContratado) {
+			System.out.println("O funcionário está contratado");
+		} else {
+			System.out.println("O funcionário foi demitido");
+		}
+
+		f.rua = "Exemplo, 123";
+		f.bairro = "Exemplos";
+		f.cidade = "Java City";
+		f.cep = "11122-123";
+		f.estado = "Orientação a Objetos";
+
+		String endereco = "Endereço do funcionário: " + f.mostraEnderecoCompleto();
+
+		System.out.println(endereco);
 	}
 }
